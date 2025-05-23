@@ -4,10 +4,8 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { 
   AppstoreOutlined, 
   CheckCircleOutlined,
-  UserOutlined,
   BookOutlined,
-  TeamOutlined,
-  SettingOutlined
+  TeamOutlined
 } from '@ant-design/icons';
 import { useAppContext } from '../../context/AppContext';
 import { BookText, UserCircle } from 'lucide-react';
@@ -34,12 +32,7 @@ const Sidebar: React.FC = () => {
       key: '/confirm',
       icon: <CheckCircleOutlined />,
       label: '确认信息',
-    },
-    {
-      key: '/profile',
-      icon: <UserOutlined />,
-      label: '个人信息',
-    },
+    }
   ];
 
   const teacherItems = [
@@ -58,11 +51,7 @@ const Sidebar: React.FC = () => {
       icon: <TeamOutlined />,
       label: '学生管理',
     },
-    {
-      key: '/teacher/settings',
-      icon: <SettingOutlined />,
-      label: '系统设置',
-    },
+    
   ];
 
   const switchRole = () => {
@@ -79,7 +68,7 @@ const Sidebar: React.FC = () => {
     >
       <div className="p-4 flex items-center justify-center border-b border-gray-200">
         <BookText className="text-blue-500 mr-2" size={24} />
-        <span className="text-lg font-bold">Arco Pro</span>
+        <span className="text-sm font-bold">毕业设计管理系统</span>
       </div>
       
       <Menu

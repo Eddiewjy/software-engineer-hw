@@ -61,7 +61,7 @@ const HomePage: React.FC = () => {
         </Col>
       </Row>
       
-      <Card title="通知公告" className="mb-8">
+      {/* <Card title="通知公告" className="mb-8">
         <List
           itemLayout="horizontal"
           dataSource={[
@@ -97,9 +97,9 @@ const HomePage: React.FC = () => {
             </List.Item>
           )}
         />
-      </Card>
+      </Card> */}
       
-      <Card title="快速入口">
+      {/* <Card title="快速入口">
         <div className="flex flex-wrap gap-4">
           <Button type="primary" size="large" onClick={() => navigate('/courses')}>
             开始选择课题
@@ -111,7 +111,7 @@ const HomePage: React.FC = () => {
             联系管理员
           </Button>
         </div>
-      </Card>
+      </Card> */}
     </>
   );
   
